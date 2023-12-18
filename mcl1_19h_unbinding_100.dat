@@ -1,0 +1,118 @@
+RESTART
+    WHOLEMOLECULES ENTITY0=1-2452 STRIDE=1
+
+    p: PATHMSD REFERENCE=path_mcl1_19h.pdb  LAMBDA=230.00  
+    uwall_z: UPPER_WALLS ARG=p.zzz AT=0.05 KAPPA=400000.0
+    restraint: ...
+              MOVINGRESTRAINT
+                 ARG=p.sss
+               AT0=3       STEP0=0   KAPPA0=20
+           AT1=4       STEP1=450450
+           AT2=5       STEP2=900900
+           AT3=6       STEP3=1351350
+           AT4=7       STEP4=1801800
+           AT5=8       STEP5=2252250
+           AT6=9       STEP6=2702700
+           AT7=10       STEP7=3153150
+           AT8=11       STEP8=3603600
+           AT9=12       STEP9=4054050
+           AT10=13       STEP10=4504500
+           AT11=14       STEP11=4954950
+           AT12=15       STEP12=5405400
+           AT13=16       STEP13=5855850
+           AT14=17       STEP14=6306300
+           AT15=18       STEP15=6756750
+           AT16=19       STEP16=7207200
+           AT17=20       STEP17=7657650
+           AT18=21       STEP18=8108100
+           AT19=22       STEP19=8558550
+           AT20=23       STEP20=9009000
+           AT21=24       STEP21=9459450
+           AT22=25       STEP22=9909900
+           AT23=26       STEP23=10360350
+           AT24=27       STEP24=10810800
+           AT25=28       STEP25=11261250
+           AT26=29       STEP26=11711700
+           AT27=30       STEP27=12162150
+           AT28=31       STEP28=12612600
+           AT29=32       STEP29=13063050
+           AT30=33       STEP30=13513500
+           AT31=34       STEP31=13963950
+           AT32=35       STEP32=14414400
+           AT33=36       STEP33=14864850
+           AT34=37       STEP34=15315300
+           AT35=38       STEP35=15765750
+           AT36=39       STEP36=16216200
+           AT37=40       STEP37=16666650
+           AT38=41       STEP38=17117100
+           AT39=42       STEP39=17567550
+           AT40=43       STEP40=18018000
+           AT41=44       STEP41=18468450
+           AT42=45       STEP42=18918900
+           AT43=46       STEP43=19369350
+           AT44=47       STEP44=19819800
+           AT45=48       STEP45=20270250
+           AT46=49       STEP46=20720700
+           AT47=50       STEP47=21171150
+           AT48=51       STEP48=21621600
+           AT49=52       STEP49=22072050
+           AT50=53       STEP50=22522500
+           AT51=54       STEP51=22972950
+           AT52=55       STEP52=23423400
+           AT53=56       STEP53=23873850
+           AT54=57       STEP54=24324300
+           AT55=58       STEP55=24774750
+           AT56=59       STEP56=25225200
+           AT57=60       STEP57=25675650
+           AT58=61       STEP58=26126100
+           AT59=62       STEP59=26576550
+           AT60=63       STEP60=27027000
+           AT61=64       STEP61=27477450
+           AT62=65       STEP62=27927900
+           AT63=66       STEP63=28378350
+           AT64=67       STEP64=28828800
+           AT65=68       STEP65=29279250
+           AT66=69       STEP66=29729700
+           AT67=70       STEP67=30180150
+           AT68=71       STEP68=30630600
+           AT69=72       STEP69=31081050
+           AT70=73       STEP70=31531500
+           AT71=74       STEP71=31981950
+           AT72=75       STEP72=32432400
+           AT73=76       STEP73=32882850
+           AT74=77       STEP74=33333300
+           AT75=78       STEP75=33783750
+           AT76=79       STEP76=34234200
+           AT77=80       STEP77=34684650
+           AT78=81       STEP78=35135100
+           AT79=82       STEP79=35585550
+           AT80=83       STEP80=36036000
+           AT81=84       STEP81=36486450
+           AT82=85       STEP82=36936900
+           AT83=86       STEP83=37387350
+           AT84=87       STEP84=37837800
+           AT85=88       STEP85=38288250
+           AT86=89       STEP86=38738700
+           AT87=90       STEP87=39189150
+           AT88=91       STEP88=39639600
+           AT89=92       STEP89=40090050
+           AT90=93       STEP90=40540500
+           AT91=94       STEP91=40990950
+           AT92=95       STEP92=41441400
+           AT93=96       STEP93=41891850
+           AT94=97       STEP94=42342300
+           AT95=98       STEP95=42792750
+           AT96=99       STEP96=43243200
+           AT97=100       STEP97=43693650
+           AT98=101       STEP98=44144100
+           AT99=102       STEP99=44594550
+           AT100=103       STEP100=45045000
+           AT101=104       STEP101=45495450
+           AT102=105       STEP102=45945900
+           AT103=106       STEP103=46396350
+           AT104=107       STEP104=46846800
+           AT105=108       STEP105=47297250
+           AT106=109       STEP106=47747700
+...
+    PRINT ARG=p.sss,p.zzz,restraint.work STRIDE=1 FILE=colv FMT=%8.4f
+    
